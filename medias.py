@@ -5,7 +5,7 @@ nota3=float(input("Digite a terceira nota: "))
 media= (nota1 + nota2 + nota3)/3
 
 if media >= 7:
-    print(f"Aluno(a) aprovado(a)! Com media: {media:.2 f}")
+    print(f"Aluno(a) aprovado(a)! Com media: {media:.2f}")
 elif media >=3 and media < 7 :
     print(f" Aluno(a) em recuperacão com media {media:.2f}")
     fez_recuperacao=input("Aluno fez recuperacao? s/n :")
