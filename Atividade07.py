@@ -7,11 +7,18 @@
 #Isósceles: dois lados iguais.
 #• Escaleno: todos os lados diferentes.
 
-ra=float(input("Digite o cumprimento A :"))
-rb=float(input("Digite o cumprimento B :"))
-rc=float(input("Digite o cumprimento C :"))
+a=float(input("Digite o cumprimento A :"))
+b=float(input("Digite o cumprimento B :"))
+c=float(input("Digite o cumprimento C :"))
 
-if ra + rb > rc and rb + ra > rc and rc + ra > rc :
+if a + b > c and b + a > c and c + a > c :
     print("Forma um triângulo.")
-    if ra == rb and rb == rc and rc == ra:
-        print("Equilátero.")
+    if a == b == c:
+        print("Triângulo equilátero.")
+    elif a == b or a == c or b == c:
+        print("Triângulo isósceles.")
+    else:
+        print("Triângulo escaleno.")
+else:
+    print("As retas não podem formar um triângulo.")
+
