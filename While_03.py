@@ -15,14 +15,17 @@ digite dois numeros e selecione as operações
     n1 = int(input('digite um numero: '))
     n2 = int(input('digite um numero: '))
     op = input('selecione a operação: ')
-    if op == '+':
-        print(n1+n2)
-    elif op == '-':
-        print(n1-n2)
-    elif op == '*':
-        print(n1*n2)
-    elif op == '/':
-        print(n1/n2)
-    s = input('deseja sair (s/n): ')
-    if s == 's':
-        break
+    try:
+        if op == '+':
+            print(n1+n2)
+        elif op == '-':
+            print(n1-n2)
+        elif op == '*':
+            print(n1*n2)
+        elif op == '/':
+            print(n1/n2)
+        s = input('deseja sair (s/n): ')
+        if s == 's':
+            break
+    except:
+        print('calculo invalido')
